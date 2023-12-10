@@ -25,7 +25,7 @@ body{
 }
 
 .fixed-footer{
-    bottom: 0;
+    bottom: auto;
     text-align: center;
     background-color: #1a1716;
 }
@@ -45,6 +45,9 @@ nav a{
 .navbar {
     overflow: hidden;
     background-color: #969394;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
 }
   
   .navbar a {
@@ -146,3 +149,194 @@ nav a{
       transform: translateX(-50%);
     }
   }
+  .info-section {
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+
+
+}
+
+.covid_Section {
+    position: relative;
+    width: 2000px;
+    height: 350px;
+}
+
+.diabetes_Section {
+    position: relative;
+    width: 2000px;
+    height: 350px;
+}
+
+.covid_item_1 {
+
+    background-color: rgb(230, 230, 238);
+    width: 150px;
+    height: 200px;    
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 40px;
+    left: 20px;
+
+
+}
+
+.covid_item_2 {
+
+    background-color: rgb(230, 230, 238);
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 40px;
+    left: 550px;
+
+}
+
+.covid_item_3 {
+
+    background-color: rgb(230, 230, 238);
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 40px;
+    left: 1100px;
+}
+
+.covid_item_4 {
+
+    background-color: rgb(230, 230, 238);
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+    position: absolute;
+    top: 40px;
+    left: 1500px;
+
+}
+
+.diabetes_item_1 {
+
+    background-color: rgb(230, 230, 238);
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 360px;
+    left: 20px;
+
+}
+
+.diabetes_item_2 {
+
+    background-color: rgb(230, 230, 238);
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 360px;
+    left: 550px;
+
+
+}
+
+.diabetes_item_3 {
+
+    background-color: rgb(230, 230, 238);
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 360px;
+    left: 1100px;
+
+
+}
+
+.diabetes_item_4 {
+
+    background-color: rgb(230, 230, 238);
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+    position: absolute;
+    top: 360px;
+    left: 1500px;
+
+
+
+}
+
+.button_style {
+    background-color: rgb(210, 208, 240);
+    border: 1px solid steelblue;
+    color: orange;
+    text-align: center;
+    text-decoration: none;
+    display: inline-table;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 8px;
+
+}
+
+button:active {
+    background-color: rgb(250, 234, 230);
+    border: 1px solid rgb(0, 255, 76);
+}
+
+.price_style {
+    color: steelblue;
+}
+
+div .covid_img_style:hover {
+    width: 160px;
+    height: 110px;
+
+}
+
+.covid_img_style {
+    border: 1px solid steelblue;
+    width: 150px;
+    height: 100px;
+}
+
+.title_style {
+    width: 50px;
+    height: 100px;
+
+}
+
+.position_style {
+
+    position: absolute;
+    top: 300px;
+
+
+}
+
+.product_caption {
+     color: black;
+}
