@@ -1,344 +1,394 @@
-body{        
-    padding-top: 60px;
-    padding-bottom: 40px;
-}
-.fixed-header, .fixed-footer{
-    width: 100%;
-    position: fixed;        
-    background: #5c5756;
-    padding: 13px 0;
-    color: #fff;
-    height: 45px;
+body {
+  height: auto;
+  margin: 0%;
 }
 
-.fixed-header{
-    top: 0;
-    font-size: x-large;
-    text-align:center;
+
+
+header h1 {
+  background-color: rgb(32, 32, 29);
+  margin: 0%;
+  padding: 20px;
+  text-align: center;
+  color: white;
 }
 
-.fixed-header p {
-    float: right;
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0%;
-    padding: 8px;
-    text-align: center;
+
+
+footer h4 {
+  background-color: black;
+  margin: 0%;
+  padding: 20px;
+  text-align: center;
+  color: white;
 }
 
-.fixed-footer{
-    bottom: auto;
-    text-align: center;
-    background-color: #1a1716;
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  /* Center the DIV horizontally */
 }
 
-.container{
-    width: 80%;
-    margin: 0 auto; /* Center the DIV horizontally */
-}
-nav a{
-    color: #fff;
-    text-decoration: none;
-    padding: 7px 25px;
-    display: inline-block;
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 25px;
+  display: inline-block;
 }
 
 
 .navbar {
-    overflow: hidden;
-    background-color: #969394;
-    position: sticky;
-    top: 0%;
-    z-index: 1;
+  overflow: hidden;
+  background-color: #969394;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
 }
-  
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #4a4748;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #4a4748;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 
-  .scroll {
-    position: relative;
-    width: 100vw;
-    background-color: $boxify-bg-light-dark;
-    overflow: hidden;
-    z-index: 1;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .m-scroll {
-    overflow: hidden;
-    height: 100%;
-    white-space: nowrap;
-    animation: scrollText 10s infinite linear;
-    margin: 0;
-    font-size: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 250%;
-  }
-  
-  span{
-    display: block;
-    margin: 0;
-    padding: 0;
-    color: white;    
+.scroll {
+  position: relative;
+  width: 100vw;
+  background-color: $boxify-bg-light-dark;
+  overflow: hidden;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.m-scroll {
+  overflow: hidden;
+  height: 100%;
+  white-space: nowrap;
+  animation: scrollText 10s infinite linear;
+  margin: 0;
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 250%;
+}
+
+span {
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+span img {
+  display: block;
+  width: 100%;
+  min-width: 100% !important;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
   }
 
-  span img {
-    display: block;
-    width: 100%;
-    min-width: 100% !important;
+  to {
+    transform: translateX(-50%);
   }
-  
-  @keyframes scrollText {
-    from {
-      transform: translateX(0%);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
-  .info-section {
-    overflow: hidden;
-    height: 800px;
-    width: 1200px;
+}
+
+.info-section {
+  overflow: hidden;
+  height: 800px;
+  width: 1200px;
 
 
+}
+
+.info-section {
+  overflow: hidden;
+  height: 800px;
+  width: 1200px;
+
+
+}
+
+
+
+.img-information {
+  width: 100%;
+  height: 30%;
+  background-image: url("images/animation/ani2.png");
+  background-size: 100% 100%;
+  animation: changeImage 30s linear infinite;
+  border: 2px solid steelblue;
+
+}
+
+@keyframes changeImage {
+  0% {
+    background-image: url("images/animation/ani2.png");
+    opacity: 1;
+  }
+
+  25% {
+    background-image: url("images/animation/ani1.jpg");
+    opacity: 1;
+  }
+
+  50% {
+    background-image: url("images/animation/ani3.jpg");
+    opacity: 1;
+  }
+
+  75% {
+    background-image: url("images/animation/ani4.jpg");
+    opacity: 1;
+  }
+
+  100% {
+    background-image: url("images/animation/ani5.jpg");
+    opacity: 1;
+  }
+}
+
+
+.animation_section {
+  width: 100%;
+  height: 100vh;
 }
 
 .covid_Section {
-    position: relative;
-    width: 2000px;
-    height: 350px;
+  position: relative;
+  width: 2000px;
+  height: 350px;
 }
 
 .diabetes_Section {
-    position: relative;
-    width: 2000px;
-    height: 350px;
+  position: relative;
+  width: 2000px;
+  height: 350px;
 }
 
 .covid_item_1 {
 
-    background-color: rgb(230, 230, 238);
-    width: 150px;
-    height: 200px;    
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 40px;
-    left: 20px;
+  background-color: rgb(230, 230, 238);
+  width: 150px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 40px;
+  left: 20px;
 
 
 }
 
 .covid_item_2 {
 
-    background-color: rgb(230, 230, 238);
-    width: 150px;
-    height: 200px;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 40px;
-    left: 550px;
+  background-color: rgb(230, 230, 238);
+  width: 150px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 40px;
+  left: 550px;
 
 }
 
 .covid_item_3 {
 
-    background-color: rgb(230, 230, 238);
-    width: 150px;
-    height: 200px;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 40px;
-    left: 1100px;
+  background-color: rgb(230, 230, 238);
+  width: 150px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 40px;
+  left: 1100px;
 }
 
 .covid_item_4 {
 
-    background-color: rgb(230, 230, 238);
-    width: 150px;
-    height: 200px;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgb(230, 230, 238);
+  width: 150px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 
-    position: absolute;
-    top: 40px;
-    left: 1500px;
+  position: absolute;
+  top: 40px;
+  left: 1500px;
 
 }
 
 .diabetes_item_1 {
 
-    background-color: rgb(230, 230, 238);
-    width: 150px;
-    height: 200px;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 360px;
-    left: 20px;
+  background-color: rgb(230, 230, 238);
+  width: 150px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 360px;
+  left: 20px;
 
 }
 
 .diabetes_item_2 {
 
-    background-color: rgb(230, 230, 238);
-    width: 150px;
-    height: 200px;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 360px;
-    left: 550px;
+  background-color: rgb(230, 230, 238);
+  width: 150px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 360px;
+  left: 550px;
 
 
 }
 
 .diabetes_item_3 {
 
-    background-color: rgb(230, 230, 238);
-    width: 150px;
-    height: 200px;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 360px;
-    left: 1100px;
+  background-color: rgb(230, 230, 238);
+  width: 150px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 360px;
+  left: 1100px;
 
 
 }
 
 .diabetes_item_4 {
 
-    background-color: rgb(230, 230, 238);
-    width: 150px;
-    height: 200px;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgb(230, 230, 238);
+  width: 150px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 
-    position: absolute;
-    top: 360px;
-    left: 1500px;
+  position: absolute;
+  top: 360px;
+  left: 1500px;
 
 
 
 }
 
 .button_style {
-    background-color: rgb(210, 208, 240);
-    border: 1px solid steelblue;
-    color: orange;
-    text-align: center;
-    text-decoration: none;
-    display: inline-table;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 150px;
-    border-radius: 8px;
+  background-color: rgb(210, 208, 240);
+  border: 1px solid steelblue;
+  color: orange;
+  text-align: center;
+  text-decoration: none;
+  display: inline-table;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 8px;
 
 }
 
 button:active {
-    background-color: rgb(250, 234, 230);
-    border: 1px solid rgb(0, 255, 76);
+  background-color: rgb(250, 234, 230);
+  border: 1px solid rgb(0, 255, 76);
 }
 
 .price_style {
-    color: steelblue;
+  color: steelblue;
 }
 
 div .covid_img_style:hover {
-    width: 160px;
-    height: 110px;
+  width: 160px;
+  height: 110px;
 
 }
 
 .covid_img_style {
-    border: 1px solid steelblue;
-    width: 150px;
-    height: 100px;
+  border: 1px solid steelblue;
+  width: 150px;
+  height: 100px;
 }
 
 .title_style {
-    width: 50px;
-    height: 100px;
+  width: 50px;
+  height: 100px;
 
 }
 
 .position_style {
 
-    position: absolute;
-    top: 300px;
+  position: absolute;
+  top: 300px;
 
 
 }
 
 .product_caption {
-     color: black;
+  color: black;
 }

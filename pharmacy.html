@@ -1,57 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lab 1</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="pharmacy.css">
-    </head>
-    <body>
-        <div class="fixed-header">
-            <div class="container">
-                <p>Pharmacy</p>        
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="pharmacy.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pharmacy</h1>
+    </header>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Our Medicines
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Fever</a>
+                <a href="#">Muscle Pains</a>
+                <a href="#">Cold and Cough</a>
             </div>
         </div>
-        <div class="navbar">
-            <a href="#">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn">Our Medicines 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Fever</a>
-                    <a href="#">Muscle Pains</a>
-                    <a href="#">Cold and Cough</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Health Care 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Baby Care</a>
-                    <a href="#">Skin Care</a>
-                    <a href="#">Home Care</a>
-                    <a href="#">Personal Care</a>
-                    <a href="#">Pet Care</a>
-                </div>
-            </div>
-            <a href="lab_test.html">Lab Test</a>
-        </div>
-        <div class="">
-            <div class="scroll">
-                <div class="m-scroll">
-                    <span><img src="images/animation/ani1.jpg"></span>
-                    <span><img src="images/animation/ani2.png"></span>
-                    <span><img src="images/animation/ani3.jpg"></span>
-                    <span><img src="images/animation/ani4.jpg"></span>
-                    <span><img src="images/animation/ani5.jpg"></span>
-                </div>
+        <div class="dropdown">
+            <button class="dropbtn">Health Care
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Baby Care</a>
+                <a href="#">Skin Care</a>
+                <a href="#">Home Care</a>
+                <a href="#">Personal Care</a>
+                <a href="#">Pet Care</a>
             </div>
         </div>
-     
+        <a href="lab_test.html">Lab Test</a>
+    </div>
+
+
+    <section class="animation_section">
+        <div class="img-information"></div>
+
         <div class="covid_Section">
 
             <h2>Covid Care</h2>
@@ -134,12 +127,10 @@
                 <button class="button_style"><b>Add to cart</b></button>
             </div>
         </div>
-
-
-
-
-        </div>
     </section>
-        <footer class="fixed-footer">@copyright. Only for demonstration purposes</footer>
-    </body>
+    <footer>
+        <h4>@copyright. Only for demonstration purposes</h4>
+    </footer>
+</body>
+
 </html>
