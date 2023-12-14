@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 1</title>
+    <title>Pharmacy Shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="pharmacy.css">
 </head>
@@ -14,32 +14,33 @@
     <header>
         <h1>Pharmacy</h1>
     </header>
-    <div class="navbar">
-        <a href="#">Home</a>
-        <div class="dropdown">
-            <button class="dropbtn">Our Medicines
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Fever</a>
-                <a href="#">Muscle Pains</a>
-                <a href="#">Cold and Cough</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Health Care
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Baby Care</a>
-                <a href="#">Skin Care</a>
-                <a href="#">Home Care</a>
-                <a href="#">Personal Care</a>
-                <a href="#">Pet Care</a>
-            </div>
-        </div>
-        <a href="lab_test.html">Lab Test</a>
-    </div>
+    <nav id="navigate">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Our Medicines</a>
+                <ul id="Dropdown_1">
+                    <li><a href="#">Fever</a></li>
+                    <li><a href="#">Muscle Pains</a></li>
+                    <li><a href="#">Cold and Cough</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Health Care</a>
+                <ul id="Dropdown_2">
+                    <li><a href="#">Baby Care</a></li>
+                    <li><a href="#">Skin Care</a></li>
+                    <li><a href="#">Home Care</a></li>
+                    <li><a href="#">Personal Care</a></li>
+                    <li><a href="#">Pet Care</a></li>                    
+                </ul>
+            </li>
+            <li>
+                <a href="lab_test.html">Lab Test</a>              
+            </li>
+        </ul>
+    </nav>
+   
 
 
     <section class="animation_section">
