@@ -1,12 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharmacy Shop</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Home Page</title>
     <link rel="stylesheet" href="pharmacy.css">
 </head>
 
@@ -16,122 +11,89 @@
     </header>
     <nav id="navigate">
         <ul class="menu">
-            <li><a href="#">Home</a></li>
+            <li><a href="pharmacy.html"> Home </a></li>
             <li>
-                <a href="#">Our Medicines</a>
-                <ul id="Dropdown_1">
-                    <li><a href="#">Fever</a></li>
-                    <li><a href="#">Muscle Pains</a></li>
-                    <li><a href="#">Cold and Cough</a></li>
+                <a href="#"> Our Medicines </a>
+                <ul id="medicines">
+                    <li><a href="#"> Fever </a></li>
+                    <li><a href="#"> Muscle Pain </a></li>
+                    <li><a href="#"> Cold and Cough </a></li>
                 </ul>
             </li>
-            <li>
-                <a href="#">Health Care</a>
-                <ul id="Dropdown_2">
-                    <li><a href="#">Baby Care</a></li>
-                    <li><a href="#">Skin Care</a></li>
-                    <li><a href="#">Home Care</a></li>
-                    <li><a href="#">Personal Care</a></li>
-                    <li><a href="#">Pet Care</a></li>
+            <li><a href="#"> Health Care </a>
+                <ul id="healthcare">
+                    <li><a href="#"> Baby Care </a></li>
+                    <li><a href="#"> Skin Care </a></li>
+                    <li><a href="#"> Home Care </a></li>
+                    <li><a href="#"> Personal Care </a></li>
+                    <li><a href="#"> Pet Care </a></li>
                 </ul>
             </li>
-            <li>
-                <a href="lab_test.html">Lab Test</a>
-            </li>
+            <li><a href="lab_test.html" target="_blank"> Lab Test </a></li>
         </ul>
     </nav>
-
-
-
-    <section class="animation_section">
-        <div class="img-information"></div>
-
-        <div class="covid_Section">
-
-            <h2>Covid Care</h2>
-
-            <div class="covid_item_1">
-
-                <span class="product_caption"><b>Covid Test Kit</b></span><br>
-
-                <img src="images/Products/c1.jpg" class="covid_img_style"><br>
-                <span class="price_style">Rs. 40<br>
-                    Offer: Rs 30/-</span>
-                <button class="button_style"><b>Add to cart</b></button>
-            </div>
-            <div class="covid_item_2">
-
-                <span class="product_caption"><b>Covid Essentials</b></span><br>
-
-                <img src="images/Products/c2.jpg" class="covid_img_style"><br>
-                <span class="price_style">Rs. 240<br>
-                    Offer: Rs 170/-</span>
-                <button class="button_style"><b>Add to cart</b></button>
-            </div>
-
-            <div class="covid_item_3">
-
-                <span class="product_caption"><b>Sanitizer Bottle</b></span><br>
-
-                <img src="images/Products/c3.jpg" class="covid_img_style"><br>
-                <span class="price_style">Rs. 99<br>
-                    Offer: Rs 87/-</span>
-                <button class="button_style"><b>Add to cart</b></button>
-            </div>
-
-            <div class="covid_item_4">
-
-                <span class="product_caption"><b>Mask</b></span><br>
-
-                <img src="images/Products/c4.jpg" class="covid_img_style"><br>
-                <span class="price_style">Rs. 45<br>
-                    Offer: Rs 30/-</span>
-                <button class="button_style"><b>Add to cart</b></button>
-            </div>
-            <h2 class="position_style">Diabetes Care</h2>
-            <div class="diabetes_item_1">
-
-                <span class="product_caption"><b>BGR Tablet</b></span><br>
-
-                <img src="images/Products/d1.jpg" class="covid_img_style"><br>
-                <span class="price_style">Rs. 45<br>
-                    Offer: Rs 30/-</span>
-                <button class="button_style"><b>Add to cart</b></button>
-            </div>
-            <div class="diabetes_item_2">
-
-                <span class="product_caption"><b>Chawanprash</b></span><br>
-
-                <img src="images/Products/d2.jpg" class="covid_img_style"><br>
-                <span class="price_style">Rs. 45<br>
-                    Offer: Rs 30/-</span>
-                <button class="button_style"><b>Add to cart</b></button>
-            </div>
-
-            <div class="diabetes_item_3">
-
-                <span class="product_caption"><b>Colgate</b></span><br>
-
-                <img src="images/Products/d3.jpg" class="covid_img_style"><br>
-                <span class="price_style">Rs. 45<br>
-                    Offer: Rs 30/-</span>
-                <button class="button_style"><b>Add to cart</b></button>
-            </div>
-
-            <div class="diabetes_item_4">
-
-                <span class="product_caption"><b>Biscuit</b></span><br>
-
-                <img src="images/Products/d4.png" class="covid_img_style"><br>
-                <span class="price_style">Rs. 35<br>
-                    Offer: Rs 30/-</span>
-                <button class="button_style"><b>Add to cart</b></button>
-            </div>
+    <section id="img_section"></section>
+    <section class="main">
+        <h2> Covid Care </h2>
+        <div class="product">
+            <h4> Covid Test Kit </h4>
+            <img src="images/Products/c1.jpg" alt="">
+            <p>Rs. <span>40</span></p>
+            <p>Offer: Rs. <span>30/-</span></p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <h4> Covid Essentials </h4>
+            <img src="images/Products/c2.jpg" alt="">
+            <p>Rs. <span>240</span></p>
+            <p>Offer: Rs. <span>170/-</span></p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <h4> Sanitizer Bottle </h4>
+            <img src="images/Products/c3.jpg" alt="">
+            <p>Rs. <span>99</span></p>
+            <p>Offer: Rs. <span>87/-</span></p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <h4> Mask </h4>
+            <img src="images/Products/c4.jpg" alt="">
+            <p>Rs. <span>45</span></p>
+            <p>Offer: Rs. <span>30/-</span></p>
+            <button>Add to cart</button>
         </div>
     </section>
-    <footer>
-        <h4>@copyright. Only for demonstration purposes</h4>
-    </footer>
+    <section class="main">
+        <h2> Diabetes Care </h2>
+        <div class="product">
+            <h4> BGR Tablets </h4>
+            <img src="images/Products/d1.jpg" alt="">
+            <p>Rs. <span>45</span></p>
+            <p>Offer: Rs. <span>30/-</span></p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <h4> Chyavanprash </h4>
+            <img src="images/Products/d2.jpg" alt="">
+            <p>Rs. <span>45</span></p>
+            <p>Offer: Rs. <span>30/-</span></p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <h4> Colgate Paste </h4>
+            <img src="images/Products/d3.jpg" alt="">
+            <p>Rs. <span>45</span></p>
+            <p>Offer: Rs. <span>30/-</span></p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <h4> UniBic Biscuit </h4>
+            <img src="images/Products/d4.jpg" alt="">
+            <p>Rs. <span>45</span></p>
+            <p>Offer: Rs. <span>30/-</span></p>
+            <button>Add to cart</button>
+        </div>
+    </section>
+    <footer>@cpoyright. Only for demonstration purposes</footer>
 </body>
-
-</html>
